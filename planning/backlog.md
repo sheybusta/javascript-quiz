@@ -42,6 +42,8 @@ A collection of user stories you can choose from. Stories inside of each priorit
 > would be really cool ... if there's time
 
 - **Questions Page**
+  - [ ] a user can view all the questions
+    - _acceptance criteria ..._
   - [ ] a user can create a new question
     - _acceptance criteria ..._
   - [ ] a user can delete a question
