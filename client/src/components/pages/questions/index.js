@@ -11,6 +11,6 @@ export const questions = () => {
   container.className = "body";
 
   container.appendChild(inputGreeting());
-  container.appendChild(instructions("text"));
+  // container.appendChild(instructions("text"));
   return container;
 };
