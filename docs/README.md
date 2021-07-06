@@ -22,6 +22,7 @@
   - pages
     - home
       - [index.js](#clientsrccomponentspageshomeindexjs)
+      - [instructions.js](#clientsrccomponentspageshomeinstructionsjs)
     - questions
       - [index.js](#clientsrccomponentspagesquestionsindexjs)
     - quiz
@@ -111,6 +112,10 @@ The page layout component.
 The home page.
 
 **Returns**: <code>HTMLDivElement</code> - A rendered home page.
+
+</details>
+
+<details><summary><a href="../../client/src/components/pages/home/instructions.js" id="clientsrccomponentspageshomeinstructionsjs">../client/src/components/pages/home/instructions.js</a></summary>
 
 </details>
 
