@@ -1,4 +1,3 @@
-import { inputGreeting } from "../../shared/input-greeting.js";
 import { instructions } from "./instructions.js";
 import { numberOfQu } from "./number-of-questions.js";
 
