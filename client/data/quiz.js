@@ -74,41 +74,5 @@ export const data = {
         },
       ],
     },
-    {
-      question: "What does `typeof` do?",
-      answered: false,
-      answers: [
-        {
-          text: "changes the type of a primitive value",
-          correct: false,
-          selected: false,
-        },
-        {
-          text: "returns a string describing the type of a value",
-          correct: true,
-          selected: false,
-        },
-        {
-          text: "determines if a value is primitive",
-          correct: false,
-          selected: false,
-        },
-        {
-          text: "can tell the difference between arrays and objects",
-          correct: false,
-          selected: false,
-        },
-      ],
-      links: [
-        {
-          text: "javascript.info",
-          url: "https://javascript.info/types#type-typeof",
-        },
-        {
-          text: "MDN",
-          url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof",
-        },
-      ],
-    },
   ],
 };

@@ -1,4 +1,3 @@
-// import { data } from "../../../../data/quiz.js";
 import { state } from "../../../init/state.js";
 
 export const numberOfQu = () => {
