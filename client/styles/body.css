@@ -18,8 +18,5 @@ button a:link,
 button a:hover {
   color: #fff;
   text-decoration: none;
-}
-
-button {
-  margin-top: 2rem;
+  background-color: transparent;
 }
