@@ -1,5 +1,4 @@
 import { inputGreeting } from "../../shared/input-greeting.js";
-import { instructions } from "../home/instructions.js";
 
 /**
  * The questions page.
@@ -11,6 +10,5 @@ export const questions = () => {
   container.className = "body";
 
   container.appendChild(inputGreeting());
-  // container.appendChild(instructions("text"));
   return container;
 };
