@@ -10,7 +10,8 @@
  * and the data.questions[indexOfRenderedQuestion] question will be rendered on the quiz page.
  *
  * @property {number} numberOfTotalQuestions - this variable stores
- * the total number of questions show when it is needed in the application.
+ * the total number of questions in the quiz
+ * and shows when it is needed in the application.
  * This variable will be updated when the application (or home page) is loaded.
  * When then question page is loaded and questions are added or removed this
  * variable must be recalculated.

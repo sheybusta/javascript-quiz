@@ -6,6 +6,22 @@ export const schema = {
   required: ['questions'],
 
   properties: {
+    indexOfRenderedQuestion: {
+      type: 'number',
+      description:
+        'The index of the current question which is rendered in the quiz page.',
+    },
+
+    numberOfTotalQuestions: {
+      type: 'number',
+      description: 'the total number of questions in the quiz',
+    },
+
+    currentScore: {
+      type: 'number',
+      description: 'The current score of the user.',
+    },
+
     greeting: {
       type: 'string',
       description: 'a friendly greeting for the user',
