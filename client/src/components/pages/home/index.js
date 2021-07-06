@@ -1,6 +1,7 @@
 import { state } from '../../../init/state.js';
 import { instructions } from './instructions.js';
 import { numberOfQu } from './number-of-questions.js';
+import { startQuizButton } from './startButton.js';
 
 /**
  * The home page.
@@ -18,6 +19,8 @@ export const home = () => {
   //   )
   // );
   container.appendChild(numberOfQu());
+
+  container.appendChild(startQuizButton());
 
   return container;
 };

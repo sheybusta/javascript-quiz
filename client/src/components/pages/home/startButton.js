@@ -13,7 +13,7 @@ export const startQuizButton = () => {
 
   buttonsDiv.appendChild(startButton);
 
-  startButton.addEventListener('click');
+  //   startButton.addEventListener('click');
 
   return buttonsDiv;
 };
