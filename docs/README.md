@@ -23,6 +23,7 @@
     - home
       - [index.js](#clientsrccomponentspageshomeindexjs)
       - [instructions.js](#clientsrccomponentspageshomeinstructionsjs)
+      - [number-of-questions.js](#clientsrccomponentspageshomenumber-of-questionsjs)
     - questions
       - [index.js](#clientsrccomponentspagesquestionsindexjs)
     - quiz
@@ -116,6 +117,10 @@ The home page.
 </details>
 
 <details><summary><a href="../../client/src/components/pages/home/instructions.js" id="clientsrccomponentspageshomeinstructionsjs">../client/src/components/pages/home/instructions.js</a></summary>
+
+</details>
+
+<details><summary><a href="../../client/src/components/pages/home/number-of-questions.js" id="clientsrccomponentspageshomenumber-of-questionsjs">../client/src/components/pages/home/number-of-questions.js</a></summary>
 
 </details>
 
