@@ -1,37 +1,40 @@
-// import { startQuizHandler } from '../../../handlers/startQuizHandler.js';
 import { button } from '../../shared/button.js';
+import { resetQuiz } from '../../../logic/resetQuiz.js';
 
-// import Navigo from '../../../../lib/navigo'; // When using ES modules.
-
-// const router = new Navigo('/');
-
-export const startQuizButton = () => {
+/**
+ * This function creates a start/restart button for the quiz page and
+ * resets the quiz state: , last seen question, score, answers
+ *
+ * @param {String} buttonText the text that will be shown on the button
+ * @returns a div element containing the button
+ */
+export const startQuizButton = (buttonText = 'Start The Quiz') => {
   const buttonsDiv = document.createElement('div');
   buttonsDiv.id = 'buttons-container';
+  //to give margin top spacing
   buttonsDiv.className = 'my-5';
 
+  /*
+   * with nagivo the way links work is to put the button
+   * inside a 'a' element. This way you can add a proper
+   * event listener to the button.
+   */
   const theLink = document.createElement('a');
   theLink.href = '/quiz';
   theLink.setAttribute('data-navigo', true);
 
-  const startButton = button(
-    'button',
-    'Start The Quiz',
-    // '<a href="/quiz" data-navigo>Start The Quiz</a>',
-    'btn btn-primary'
-  );
+  const startButton = button('button', buttonText, 'btn btn-primary');
 
   theLink.appendChild(startButton);
-  // buttonsDiv.appendChild(startButton);
+
   buttonsDiv.appendChild(theLink);
 
   startButton.addEventListener('click', () => {
-    // router.navigate('/quiz');
-    // location.replace('/quiz');
-    // location.href = '/quiz';
-    console.log('quiz started');
+    console.log(`Quiz: ${buttonText}`);
+
+    //reset the quiz parameters
+    resetQuiz();
   });
-  //   startButton.addEventListener('click', startQuizHandler);
 
   return buttonsDiv;
 };
