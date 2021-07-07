@@ -3,7 +3,6 @@ import { state } from '../../../init/state.js';
 import { divElement } from '../../shared/div.js';
 import { createQuizButtonsDiv } from './quiz-buttons.js';
 import { createRestartQuizButtonPanel } from './restart-button.js';
-import { addQuestionToPanel } from './add-question-to-panel.js';
 
 export const quizQuestionPanel = () => {
   //Main display panel for the question

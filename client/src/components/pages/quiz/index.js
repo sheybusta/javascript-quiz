@@ -1,4 +1,3 @@
-import { addQuestionToPanel } from './add-question-to-panel.js';
 import { quizQuestionPanel } from './quiz-question-panel.js';
 
 /**

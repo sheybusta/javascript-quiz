@@ -8,7 +8,7 @@ import { resetQuiz } from '../../../logic/reset-quiz.js';
  * @param {String} buttonText the text that will be shown on the button
  * @returns a div element containing the button
  */
-export const createRestartQuizButtonPanel = (buttonText = 'Start The Quiz') => {
+export const createRestartQuizButtonPanel = () => {
   const restartButtonPanel = document.createElement('div');
   restartButtonPanel.className = 'mt-5';
   restartButtonPanel.id = 'restart-button-panel';
@@ -25,7 +25,7 @@ export const createRestartQuizButtonPanel = (buttonText = 'Start The Quiz') => {
 
   const restartButton = button(
     'button',
-    buttonText,
+    'Restart The Quiz',
     'btn btn-danger float-right my-5'
   );
 
