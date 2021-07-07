@@ -21,5 +21,5 @@ export const home = () => {
   return container;
 };
 
-//calculate the number fo total questions in the quiz data
+//calculate the number of total questions in the quiz data
 state.numberOfTotalQuestions = state.questions.length;

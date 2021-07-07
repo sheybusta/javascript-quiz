@@ -1,3 +1,4 @@
+import { addQuestionToPanel } from './add-question-to-panel.js';
 import { quizQuestionPanel } from './quiz-question-panel.js';
 
 /**
@@ -13,5 +14,6 @@ export const quiz = () => {
   const mainQuestionPanel = quizQuestionPanel();
 
   container.appendChild(mainQuestionPanel);
+
   return container;
 };

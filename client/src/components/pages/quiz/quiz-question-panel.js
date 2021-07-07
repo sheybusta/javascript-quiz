@@ -3,10 +3,10 @@ import { state } from '../../../init/state.js';
 import { divElement } from '../../shared/div.js';
 import { createQuizButtonsDiv } from './quiz-buttons.js';
 import { createRestartQuizButtonPanel } from './restart-button.js';
+import { addQuestionToPanel } from './add-question-to-panel.js';
 
 export const quizQuestionPanel = () => {
   //Main display panel for the question
-
   const quizQuestionPanel = divElement(
     // To remove the borders remove classes 'border',  'border-secondary',
     // and 'rounded'
@@ -22,12 +22,6 @@ export const quizQuestionPanel = () => {
     'quiz-question-shows'
   );
 
-  //TODO init question
-  //get the question to display
-  let questionIndex = state.indexOfRenderedQuestion;
-  console.log(state.questions[questionIndex]);
-  questionDiv.innerText = state.questions[questionIndex].question;
-
   quizQuestionPanel.appendChild(questionDiv);
 
   //main answers div to display the answers
@@ -38,13 +32,17 @@ export const quizQuestionPanel = () => {
     'quiz-answers-show'
   );
 
-  //TODO init answers
-  // get the answers and display in the panel
-  state.questions[questionIndex].answers.forEach((answer) => {
+  quizQuestionPanel.appendChild(answersDiv);
+
+  //init the panel with question and answers
+  //the question
+  questionDiv.innerText =
+    state.questions[state.indexOfRenderedQuestion].question;
+
+  //the answers
+  state.questions[state.indexOfRenderedQuestion].answers.forEach((answer) => {
     answersDiv.appendChild(document.createTextNode(answer.text));
   });
-
-  quizQuestionPanel.appendChild(answersDiv);
 
   //main div for the quiz buttons
   const quizButtonsDiv = createQuizButtonsDiv();
