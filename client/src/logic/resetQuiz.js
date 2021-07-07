@@ -26,7 +26,7 @@ const resetQuestions = () => {
     question.answered = false;
 
     question.answers.forEach((answer) => {
-      selected = false;
+      answer.selected = false;
     });
   });
 };
