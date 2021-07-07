@@ -24,11 +24,17 @@
       - [index.js](#clientsrccomponentspageshomeindexjs)
       - [instructions.js](#clientsrccomponentspageshomeinstructionsjs)
       - [number-of-questions.js](#clientsrccomponentspageshomenumber-of-questionsjs)
+      - [start-button.js](#clientsrccomponentspageshomestart-buttonjs)
     - questions
       - [index.js](#clientsrccomponentspagesquestionsindexjs)
     - quiz
       - [index.js](#clientsrccomponentspagesquizindexjs)
+      - [quiz-buttons.js](#clientsrccomponentspagesquizquiz-buttonsjs)
+      - [quiz-question-panel.js](#clientsrccomponentspagesquizquiz-question-paneljs)
+      - [restart-button.js](#clientsrccomponentspagesquizrestart-buttonjs)
   - shared
+    - [button.js](#clientsrccomponentssharedbuttonjs)
+    - [div.js](#clientsrccomponentsshareddivjs)
     - [input-greeting.js](#clientsrccomponentssharedinput-greetingjs)
 - handlers
   - [change-greeting.js](#clientsrchandlerschange-greetingjs)
@@ -37,6 +43,7 @@
   - [router.js](#clientsrcinitrouterjs)
   - [state.js](#clientsrcinitstatejs)
 - logic
+  - [reset-quiz.js](#clientsrclogicreset-quizjs)
   - [reverse.js](#clientsrclogicreversejs)
 - [routes.js](#clientsrcroutesjs)
 
@@ -124,6 +131,23 @@ The home page.
 
 </details>
 
+<details><summary><a href="../../client/src/components/pages/home/start-button.js" id="clientsrccomponentspageshomestart-buttonjs">../client/src/components/pages/home/start-button.js</a></summary>
+
+<a name="startQuizButton"></a>
+
+## startQuizButton ⇒
+
+This function creates a start/restart button for the quiz page and
+resets the quiz state: , last seen question, score, answers
+
+**Returns**: a div element containing the button
+
+| Param      | Type                | Description                               |
+| ---------- | ------------------- | ----------------------------------------- |
+| buttonText | <code>String</code> | the text that will be shown on the button |
+
+</details>
+
 ---
 
 ### /questions
@@ -150,9 +174,34 @@ The questions page.
 
 ## quiz ⇒ <code>HTMLDivElement</code>
 
-The quiz page.
+The quiz page. Loads when the quiz page is requested.
 
 **Returns**: <code>HTMLDivElement</code> - A rendered quiz page.
+
+</details>
+
+<details><summary><a href="../../client/src/components/pages/quiz/quiz-buttons.js" id="clientsrccomponentspagesquizquiz-buttonsjs">../client/src/components/pages/quiz/quiz-buttons.js</a></summary>
+
+</details>
+
+<details><summary><a href="../../client/src/components/pages/quiz/quiz-question-panel.js" id="clientsrccomponentspagesquizquiz-question-paneljs">../client/src/components/pages/quiz/quiz-question-panel.js</a></summary>
+
+</details>
+
+<details><summary><a href="../../client/src/components/pages/quiz/restart-button.js" id="clientsrccomponentspagesquizrestart-buttonjs">../client/src/components/pages/quiz/restart-button.js</a></summary>
+
+<a name="createRestartQuizButtonPanel"></a>
+
+## createRestartQuizButtonPanel ⇒
+
+This function creates a start/restart button for the quiz page and
+resets the quiz state: , last seen question, score, answers
+
+**Returns**: a div element containing the button
+
+| Param      | Type                | Description                               |
+| ---------- | ------------------- | ----------------------------------------- |
+| buttonText | <code>String</code> | the text that will be shown on the button |
 
 </details>
 
@@ -161,6 +210,27 @@ The quiz page.
 ---
 
 ## /shared
+
+<details><summary><a href="../../client/src/components/shared/button.js" id="clientsrccomponentssharedbuttonjs">../client/src/components/shared/button.js</a></summary>
+
+</details>
+
+<details><summary><a href="../../client/src/components/shared/div.js" id="clientsrccomponentsshareddivjs">../client/src/components/shared/div.js</a></summary>
+
+<a name="divElement"></a>
+
+## divElement ⇒
+
+This component creates a div element and returns it.
+
+**Returns**: a div element
+
+| Param      | Type                | Description                         |
+| ---------- | ------------------- | ----------------------------------- |
+| classNames | <code>string</code> | The class names of the div element. |
+| id         | <code>string</code> | The unique id of the div element    |
+
+</details>
 
 <details><summary><a href="../../client/src/components/shared/input-greeting.js" id="clientsrccomponentssharedinput-greetingjs">../client/src/components/shared/input-greeting.js</a></summary>
 
@@ -195,6 +265,54 @@ The quiz page.
 ---
 
 # /logic
+
+<details><summary><a href="../../client/src/logic/reset-quiz.js" id="clientsrclogicreset-quizjs">../client/src/logic/reset-quiz.js</a></summary>
+
+## Constants
+
+<dl>
+<dt><a href="#resetQuiz">resetQuiz</a></dt>
+<dd><p>This function reset the state of quiz:</p>
+<ul>
+<li>resets indexOfRenderedQuestion,</li>
+<li>resets currentScore, and</li>
+<li>resets the state of each question</li>
+</ul>
+</dd>
+</dl>
+
+## Functions
+
+<dl>
+<dt><a href="#resetQuestions">resetQuestions()</a></dt>
+<dd><p>This function resets the state of each question in the quiz:</p>
+<ul>
+<li>resets answered property and</li>
+<li>resets selected property of each available answer for each question</li>
+</ul>
+</dd>
+</dl>
+
+<a name="resetQuiz"></a>
+
+## resetQuiz
+
+This function reset the state of quiz:
+
+- resets indexOfRenderedQuestion,
+- resets currentScore, and
+- resets the state of each question
+
+<a name="resetQuestions"></a>
+
+## resetQuestions()
+
+This function resets the state of each question in the quiz:
+
+- resets answered property and
+- resets selected property of each available answer for each question
+
+</details>
 
 <details><summary><a href="../../client/src/logic/reverse.js" id="clientsrclogicreversejs">../client/src/logic/reverse.js</a></summary>
 
