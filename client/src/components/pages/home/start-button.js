@@ -12,6 +12,7 @@ export const startQuizButton = (buttonText = "Start The Quiz") => {
   // to give margin top spacing
   buttonsDiv.className = "my-5";
 
+  /* eslint-disable-next-line spellcheck/spell-checker */
   /* With Nagivo the way links work is to put the button inside a 'a' element.
    * This way you can add a proper event listener to the button.
    *
@@ -20,6 +21,7 @@ export const startQuizButton = (buttonText = "Start The Quiz") => {
    * you should import ‘router’. from the src/init/router.js and then call
    * router.navigate(‘/quiz’); instead of the classic location.href=‘./quiz’;
    */
+  /* eslint-disable-next-line spellcheck/spell-checker */
   const theLink = document.createElement("a");
   theLink.href = "/quiz";
   theLink.setAttribute("data-navigo", true);
