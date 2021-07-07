@@ -18,6 +18,12 @@ export const createRestartQuizButtonPanel = () => {
    * inside an 'a' element. This way you can add a proper
    * event listener to the button.
    * also 'a' must have 'data-navigo' property to work properly.
+   *
+   * Note from: Yoshi Malaise
+   * If you really want to add this manually you can look into navbar.js,
+   * router.js  and routes.js to manually navigate to page from your code
+   * you should import ‘router’. from the src/init/router.js and then call
+   * router.navigate(‘/quiz’); instead of the classic location.href=‘./quiz’;
    */
   const theLink = document.createElement('a');
   theLink.href = '/quiz';
