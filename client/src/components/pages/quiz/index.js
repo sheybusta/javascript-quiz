@@ -1,3 +1,4 @@
+import { state } from '../../../init/state.js';
 import { quizQuestionPanel } from './quiz-question-panel.js';
 
 /**
@@ -9,10 +10,17 @@ export const quiz = () => {
   const container = document.createElement('div');
   container.className = 'body';
 
-  //Main display panel for the questions
-  const mainQuestionPanel = quizQuestionPanel();
+  if (state.indexOfRenderedQuestion >= 0) {
+    //Main display panel for the questions
+    const mainQuestionPanel = quizQuestionPanel();
 
-  container.appendChild(mainQuestionPanel);
+    container.appendChild(mainQuestionPanel);
+  } else {
+    //warn if the start button is never clicked
+    container.appendChild(
+      document.createTextNode('Please start the quiz from home page.')
+    );
+  }
 
   return container;
 };
