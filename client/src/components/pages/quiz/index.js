@@ -1,4 +1,4 @@
-import { quizQuestionPanel } from './quizQuestionPanel.js';
+import { quizQuestionPanel } from './quiz-question-panel.js';
 
 /**
  * The quiz page. Loads when the quiz page is requested.

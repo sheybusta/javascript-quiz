@@ -1,5 +1,5 @@
 import { button } from '../../shared/button.js';
-import { resetQuiz } from '../../../logic/resetQuiz.js';
+import { resetQuiz } from '../../../logic/reset-quiz.js';
 
 /**
  * This function creates a start/restart button for the quiz page and
