@@ -8,11 +8,10 @@ import { resetQuiz } from '../../../logic/resetQuiz.js';
  * @param {String} buttonText the text that will be shown on the button
  * @returns a div element containing the button
  */
-export const reStartQuizButton = (buttonText = 'Start The Quiz') => {
-  // const buttonsDiv = document.createElement('div');
-  // buttonsDiv.id = 'buttons-container';
-  // //to give margin top spacing
-  // buttonsDiv.className = 'my-5';
+export const createRestartQuizButtonPanel = (buttonText = 'Start The Quiz') => {
+  const restartButtonPanel = document.createElement('div');
+  restartButtonPanel.className = 'mt-5';
+  restartButtonPanel.id = 'restart-button-panel';
 
   /*
    * with nagivo the way links works is to put the button
@@ -47,6 +46,8 @@ export const reStartQuizButton = (buttonText = 'Start The Quiz') => {
     }
   });
 
+  restartButtonPanel.appendChild(theLink);
+
   // return buttonsDiv;
-  return theLink;
+  return restartButtonPanel;
 };
