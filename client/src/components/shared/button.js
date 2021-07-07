@@ -1,15 +1,15 @@
 export const button = (
-  type = 'button',
-  innerHtml = '',
-  classList = '',
-  id = ''
+  type = "button",
+  innerHtml = "",
+  classList = "",
+  id = ""
 ) => {
-  const button = document.createElement('button');
+  const returnButton = document.createElement("button");
 
-  button.type = type;
-  button.innerHTML = innerHtml;
-  button.classList = classList;
-  button.id = id;
+  returnButton.type = type;
+  returnButton.innerHTML = innerHtml;
+  returnButton.classList = classList;
+  returnButton.id = id;
 
-  return button;
+  return returnButton;
 };
