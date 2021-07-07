@@ -135,16 +135,15 @@ The home page.
 
 <a name="startQuizButton"></a>
 
-## startQuizButton ⇒
+## startQuizButton ⇒ <code>object</code>
 
-This function creates a start/restart button for the quiz page and
-resets the quiz state: , last seen question, score, answers
+This function creates a start/restart button for the quiz page and resets the quiz state: last seen question, score, answers.
 
-**Returns**: a div element containing the button
+**Returns**: <code>object</code> - - A div element containing the button.
 
-| Param      | Type                | Description                               |
-| ---------- | ------------------- | ----------------------------------------- |
-| buttonText | <code>String</code> | the text that will be shown on the button |
+| Param      | Type                | Description                                |
+| ---------- | ------------------- | ------------------------------------------ |
+| buttonText | <code>string</code> | The text that will be shown on the button. |
 
 </details>
 
@@ -192,17 +191,11 @@ The quiz page. Loads when the quiz page is requested.
 
 <a name="createRestartQuizButtonPanel"></a>
 
-## createRestartQuizButtonPanel ⇒
+## createRestartQuizButtonPanel ⇒ <code>object</code>
 
-.....................................................................
-This function creates a start/restart button for the quiz page and
-resets the quiz state: , last seen question, score, answers
+This function creates a start/restart button for the quiz page and resets the quiz state: last seen question, score, answers.
 
-**Returns**: a div element containing the button
-
-| Param      | Type                | Description                               |
-| ---------- | ------------------- | ----------------------------------------- |
-| buttonText | <code>String</code> | the text that will be shown on the button |
+**Returns**: <code>object</code> - - A div element containing the button.
 
 </details>
 
@@ -220,16 +213,16 @@ resets the quiz state: , last seen question, score, answers
 
 <a name="divElement"></a>
 
-## divElement ⇒
+## divElement ⇒ <code>object</code>
 
 This component creates a div element and returns it.
 
-**Returns**: a div element
+**Returns**: <code>object</code> - - A div element.
 
 | Param      | Type                | Description                         |
 | ---------- | ------------------- | ----------------------------------- |
 | classNames | <code>string</code> | The class names of the div element. |
-| id         | <code>string</code> | The unique id of the div element    |
+| id         | <code>string</code> | The unique id of the div element.   |
 
 </details>
 
