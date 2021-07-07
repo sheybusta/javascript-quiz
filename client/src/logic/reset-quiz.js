@@ -7,10 +7,12 @@ import { state } from "../init/state.js";
  */
 const resetQuestions = () => {
   state.questions.forEach((question) => {
-    question.answered = false;
+    const theQuestion = question;
+    theQuestion.answered = false;
 
     question.answers.forEach((answer) => {
-      answer.selected = false;
+      const theAnswer = answer;
+      theAnswer.selected = false;
     });
   });
 };

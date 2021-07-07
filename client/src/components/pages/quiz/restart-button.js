@@ -1,7 +1,7 @@
 import { button } from "../../shared/button.js";
 import { resetQuiz } from "../../../logic/reset-quiz.js";
 
-/** ...........................................................
+/** .....................................................................
  * This function creates a start/restart button for the quiz page and
  * resets the quiz state: , last seen question, score, answers
  *
