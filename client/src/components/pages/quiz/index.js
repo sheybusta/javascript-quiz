@@ -12,37 +12,54 @@ export const quiz = () => {
   const container = document.createElement('div');
   container.className = 'body';
 
+  //Main display panel for the question
   const quizQuestionPanel = document.createElement('div');
+
+  // To remove the borders remove classes 'border',  'border-secondary',
+  // and 'rounded'
   quizQuestionPanel.className =
     'my-3 mx-auto p-2 border border-secondary rounded ';
   quizQuestionPanel.id = 'quiz-question-panel';
 
+  //main question div to display the question
   const questionDiv = document.createElement('div');
-  questionDiv.className = 'my-3 border border-secondary ';
+  // To remove the borders remove classes 'border',  'border-secondary',
+  // and 'rounded'
+  questionDiv.className = 'my-3 p-2 border border-secondary rounded';
   questionDiv.id = 'quiz-question-shows';
 
-  //TODO: get the question
+  //get the question to display
   let questionIndex = state.indexOfRenderedQuestion;
   console.log(state.questions[questionIndex]);
   questionDiv.innerText = state.questions[questionIndex].question;
 
   quizQuestionPanel.appendChild(questionDiv);
 
+  //main answers div to display the answers
   const answersDiv = document.createElement('div');
-  answersDiv.className = 'my-2 border border-secondary ';
+  // To remove the borders remove classes 'border',  'border-secondary',
+  // and 'rounded'
+  answersDiv.className = 'my-2  p-2 border border-secondary rounded';
   answersDiv.id = 'quiz-answers-show';
-  //TODO: get the answers
+
+  // get the answers and display in the panel
   state.questions[questionIndex].answers.forEach((answer) => {
     answersDiv.appendChild(document.createTextNode(answer.text));
   });
 
   quizQuestionPanel.appendChild(answersDiv);
 
+  //main div for the quiz buttons
   const quizButtonsDiv = document.createElement('div');
   quizButtonsDiv.className = 'my-3 border border-secondary ';
   quizButtonsDiv.id = 'quiz-buttons';
 
-  //TODO: add previous button
+  /*
+   * add previous button
+   * by default visibility: hidden; from the css
+   * to take the space in the div
+   * after the first question this button must be visible
+   */
   const previousButton = button(
     'button',
     'Previous',
@@ -51,11 +68,15 @@ export const quiz = () => {
   );
   quizButtonsDiv.appendChild(previousButton);
 
-  //TODO: add next button
+  // add next button
   const nextButton = button('button', 'Next', 'btn btn-primary', 'next-button');
   quizButtonsDiv.appendChild(nextButton);
 
-  //TODO: add submit button
+  /*
+   * add submit button
+   * by default display:none; from the css
+   * in the last question this button must be visible (display:block;)
+   */
   const submitButton = button(
     'button',
     'Submit',
@@ -76,25 +97,13 @@ export const quiz = () => {
   theLink.href = '/quiz';
   theLink.setAttribute('data-navigo', true);
 
-  // const restartButton = button(
-  //   'button',
-  //   'Restart The Quiz',
-  //   // '<a href="/quiz" data-navigo>Restart The Quiz</a>',
-  //   'btn btn-danger',
-  //   'restart-button'
-  // );
-
   const restartButton = reStartQuizButton('Restart The Quiz');
-
-  // restartButton.addEventListener('click', () => {
-  //   console.log('Quiz Re-started');
-  // });
 
   theLink.appendChild(restartButton);
 
   restartButtonPanel.appendChild(theLink);
 
-  container.appendChild(restartButtonPanel);
+  quizQuestionPanel.appendChild(restartButtonPanel);
 
   return container;
 };

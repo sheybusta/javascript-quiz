@@ -9,25 +9,30 @@ import { resetQuiz } from '../../../logic/resetQuiz.js';
  * @returns a div element containing the button
  */
 export const reStartQuizButton = (buttonText = 'Start The Quiz') => {
-  const buttonsDiv = document.createElement('div');
-  buttonsDiv.id = 'buttons-container';
-  //to give margin top spacing
-  buttonsDiv.className = 'my-5';
+  // const buttonsDiv = document.createElement('div');
+  // buttonsDiv.id = 'buttons-container';
+  // //to give margin top spacing
+  // buttonsDiv.className = 'my-5';
 
   /*
-   * with nagivo the way links work is to put the button
-   * inside a 'a' element. This way you can add a proper
+   * with nagivo the way links works is to put the button
+   * inside an 'a' element. This way you can add a proper
    * event listener to the button.
+   * also 'a' must have 'data-navigo' property to work properly.
    */
   const theLink = document.createElement('a');
   theLink.href = '/quiz';
   theLink.setAttribute('data-navigo', true);
 
-  const restartButton = button('button', buttonText, 'btn btn-danger');
+  const restartButton = button(
+    'button',
+    buttonText,
+    'btn btn-danger float-right my-5'
+  );
 
   theLink.appendChild(restartButton);
 
-  buttonsDiv.appendChild(theLink);
+  // buttonsDiv.appendChild(theLink);
 
   restartButton.addEventListener('click', () => {
     const isConfirmed = confirm(
@@ -42,5 +47,6 @@ export const reStartQuizButton = (buttonText = 'Start The Quiz') => {
     }
   });
 
-  return buttonsDiv;
+  // return buttonsDiv;
+  return theLink;
 };

@@ -10,3 +10,7 @@
 #submit-button {
   display: none;
 }
+
+#previous-button {
+  visibility: hidden;
+}
