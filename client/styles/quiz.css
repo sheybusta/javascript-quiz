@@ -1,0 +1,16 @@
+#quiz-question-panel {
+  max-width: 700px;
+}
+
+#quiz-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+#submit-button {
+  display: none;
+}
+
+#previous-button {
+  visibility: hidden;
+}
