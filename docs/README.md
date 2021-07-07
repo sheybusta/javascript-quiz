@@ -194,7 +194,7 @@ The quiz page. Loads when the quiz page is requested.
 
 ## createRestartQuizButtonPanel ⇒
 
-...........................................................
+.....................................................................
 This function creates a start/restart button for the quiz page and
 resets the quiz state: , last seen question, score, answers
 
