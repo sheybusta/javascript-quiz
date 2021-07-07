@@ -276,7 +276,7 @@ This component creates a div element and returns it.
 <ul>
 <li>resets indexOfRenderedQuestion,</li>
 <li>resets currentScore, and</li>
-<li>resets the state of each question</li>
+<li>resets the state of each question.</li>
 </ul>
 </dd>
 </dl>
@@ -288,7 +288,7 @@ This component creates a div element and returns it.
 <dd><p>This function resets the state of each question in the quiz:</p>
 <ul>
 <li>resets answered property and</li>
-<li>resets selected property of each available answer for each question</li>
+<li>resets selected property of each available answer for each question.</li>
 </ul>
 </dd>
 </dl>
@@ -301,7 +301,7 @@ This function reset the state of quiz:
 
 - resets indexOfRenderedQuestion,
 - resets currentScore, and
-- resets the state of each question
+- resets the state of each question.
 
 <a name="resetQuestions"></a>
 
@@ -310,7 +310,7 @@ This function reset the state of quiz:
 This function resets the state of each question in the quiz:
 
 - resets answered property and
-- resets selected property of each available answer for each question
+- resets selected property of each available answer for each question.
 
 </details>
 
