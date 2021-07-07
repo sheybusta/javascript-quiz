@@ -1,7 +1,7 @@
 import { state } from '../../../init/state.js';
-import { resetQuiz } from '../../../logic/resetQuiz.js';
+
 import { button } from '../../shared/button.js';
-// import { inputGreeting } from '../../shared/input-greeting.js';
+import { reStartQuizButton } from './reStartButton.js';
 
 /**
  * The quiz page. Loads when the quiz page is requested.
@@ -11,11 +11,6 @@ import { button } from '../../shared/button.js';
 export const quiz = () => {
   const container = document.createElement('div');
   container.className = 'body';
-
-  //reset the quiz parameters
-  resetQuiz();
-
-  // container.appendChild(inputGreeting());
 
   const quizQuestionPanel = document.createElement('div');
   quizQuestionPanel.className =
@@ -81,17 +76,19 @@ export const quiz = () => {
   theLink.href = '/quiz';
   theLink.setAttribute('data-navigo', true);
 
-  const restartButton = button(
-    'button',
-    'Restart The Quiz',
-    // '<a href="/quiz" data-navigo>Restart The Quiz</a>',
-    'btn btn-danger',
-    'restart-button'
-  );
+  // const restartButton = button(
+  //   'button',
+  //   'Restart The Quiz',
+  //   // '<a href="/quiz" data-navigo>Restart The Quiz</a>',
+  //   'btn btn-danger',
+  //   'restart-button'
+  // );
 
-  restartButton.addEventListener('click', () => {
-    console.log('Quiz Re-started');
-  });
+  const restartButton = reStartQuizButton('Restart The Quiz');
+
+  // restartButton.addEventListener('click', () => {
+  //   console.log('Quiz Re-started');
+  // });
 
   theLink.appendChild(restartButton);
 
