@@ -1,4 +1,4 @@
-// import { state } from "../../../init/state.js";
+import { state } from "../../../init/state.js";
 import { quizQuestionPanel } from "./quiz-question-panel.js";
 import { createRestartQuizButtonPanel } from "./restart-button.js";
 
@@ -23,6 +23,6 @@ export const quiz = () => {
   //   );
   // }
   container.appendChild(createRestartQuizButtonPanel());
-  container.appendChild(quizQuestionPanel());
+  container.appendChild(quizQuestionPanel(state.indexOfRenderedQuestion));
   return container;
 };

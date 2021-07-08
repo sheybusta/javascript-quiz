@@ -4,15 +4,15 @@ import { state } from "../../../init/state.js";
 // import { createQuizButtonsDiv } from "./quiz-buttons.js";
 // import { createRestartQuizButtonPanel } from "./restart-button.js";
 
-export const quizQuestionPanel = () => {
+export const quizQuestionPanel = (indexOfRenderedQuestion) => {
   const quizContainer = document.createElement("div");
   quizContainer.className = "quiz";
   const questionEl = document.createElement("p");
-  const currentQuestion = state.questions[0].question;
+  const currentQuestion = state.questions[indexOfRenderedQuestion].question;
   questionEl.innerText = currentQuestion;
   const answersEl = document.createElement("ul");
 
-  for (const answers of state.questions[0].answers) {
+  for (const answers of state.questions[indexOfRenderedQuestion].answers) {
     const checkbox = document.createElement("input");
     checkbox.setAttribute("type", "checkbox");
     const listEl = document.createElement("li");
