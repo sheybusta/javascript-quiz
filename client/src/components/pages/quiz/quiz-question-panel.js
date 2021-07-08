@@ -13,8 +13,11 @@ export const quizQuestionPanel = () => {
   const answersEl = document.createElement("ul");
 
   for (const answers of state.questions[0].answers) {
+    const checkbox = document.createElement("input");
+    checkbox.setAttribute("type", "checkbox");
     const listEl = document.createElement("li");
     listEl.innerText = answers.text;
+    listEl.insertAdjacentElement("afterbegin", checkbox);
     answersEl.appendChild(listEl);
   }
   quizContainer.appendChild(questionEl);
