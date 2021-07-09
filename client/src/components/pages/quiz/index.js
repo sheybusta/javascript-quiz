@@ -1,4 +1,5 @@
-import { renderQuiz } from "./renderQuiz.js";
+import { data } from "../../../../data/quiz.js";
+import { quizQuestionPanel } from "./renderQuiz.js";
 
 /**
  * The quiz page.
@@ -9,6 +10,6 @@ export const quiz = () => {
   const container = document.createElement("div");
   container.className = "body";
 
-  container.appendChild(renderQuiz());
+  container.appendChild(quizQuestionPanel(data.indexOfRenderedQuestion));
   return container;
 };

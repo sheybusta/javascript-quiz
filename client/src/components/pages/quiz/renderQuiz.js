@@ -1,30 +1,26 @@
 import { data } from "../../../../data/quiz.js";
 
-// create an element "div" to add question from state
-// append questions, answers and checkboxes
+// import { divElement } from "../../shared/div.js";
+// import { createQuizButtonsDiv } from "./quiz-buttons.js";
+// import { createRestartQuizButtonPanel } from "./restart-button.js";
 
-const renderQuiz = (questions) => {
+export const quizQuestionPanel = (indexOfRenderedQuestion) => {
   const quizContainer = document.createElement("div");
   quizContainer.className = "quiz";
   const questionEl = document.createElement("p");
-  const currentQuestion = data.questions[0].question;
+  const currentQuestion = data.questions[indexOfRenderedQuestion].question;
   questionEl.innerText = currentQuestion;
   const answersEl = document.createElement("ul");
-  for (const answers of data.questions[0].answers) {
+
+  for (const answers of data.questions[indexOfRenderedQuestion].answers) {
+    const checkbox = document.createElement("input");
+    checkbox.setAttribute("type", "checkbox");
     const listEl = document.createElement("li");
     listEl.innerText = answers.text;
+    listEl.insertAdjacentElement("afterbegin", checkbox);
     answersEl.appendChild(listEl);
   }
-  //   const currentAnswers = data.questions[0].answers.text;
-  //   questionEl.innerText = currentAnswers;
-  //   console.log(currentQuestion);
-  //   console.log(currentAnswers);
   quizContainer.appendChild(questionEl);
   quizContainer.appendChild(answersEl);
-
-  // create loop to add li on ul
-
   return quizContainer;
 };
-
-export { renderQuiz };
