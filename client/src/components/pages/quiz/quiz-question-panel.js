@@ -21,6 +21,10 @@ export const quizQuestionPanel = (indexQuestion) => {
     listEl.innerText = answers.text;
     listEl.insertAdjacentElement("afterbegin", checkbox);
     answersEl.appendChild(listEl);
+
+    // event listener to input checkbox
+
+    checkbox.addEventListener("click", checked);
   }
   quizContainer.appendChild(questionEl);
   quizContainer.appendChild(answersEl);
