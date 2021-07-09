@@ -9,7 +9,7 @@ import { quizQuestionPanel } from "./renderQuiz.js";
 export const quiz = () => {
   const container = document.createElement("div");
   container.className = "body";
-
-  container.appendChild(quizQuestionPanel(data.indexOfRenderedQuestion));
+  const x = data.indexOfRenderedQuestion;
+  container.appendChild(quizQuestionPanel(x));
   return container;
 };
