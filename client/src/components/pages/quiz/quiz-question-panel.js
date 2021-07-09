@@ -12,9 +12,11 @@ export const quizQuestionPanel = (indexQuestion) => {
   questionEl.innerText = currentQuestion;
   const answersEl = document.createElement("ul");
 
-  for (const answers of state.questions[indexQuestion].answers) {
+  for (let i = 0; i < state.questions[indexQuestion].answers.length; i++) {
+    const answers = state.questions[indexQuestion].answers[i];
     const checkbox = document.createElement("input");
     checkbox.setAttribute("type", "checkbox");
+    checkbox.dataset.index = i;
     const listEl = document.createElement("li");
     listEl.innerText = answers.text;
     listEl.insertAdjacentElement("afterbegin", checkbox);
