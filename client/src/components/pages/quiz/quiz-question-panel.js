@@ -31,6 +31,7 @@ export const quizQuestionPanel = (indexQuestion) => {
   const currentQuestion = state.questions[indexQuestion].question;
   questionEl.innerText = currentQuestion;
   const answersEl = document.createElement("ul");
+  answersEl.setAttribute("class", "ul-answers");
 
   for (let i = 0; i < state.questions[indexQuestion].answers.length; i++) {
     const answers = state.questions[indexQuestion].answers[i];
