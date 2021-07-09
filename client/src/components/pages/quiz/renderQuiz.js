@@ -44,9 +44,6 @@ export const quizQuestionPanel = (flag) => {
     listEl.appendChild(checkbox);
     listEl.insertAdjacentElement("afterbegin", checkbox);
     checkbox.addEventListener("click", checked);
-    // reads if selected
-    // if selected need to push that to data
-    // compare with correct === true
   }
   quizContainer.appendChild(questionEl);
   quizContainer.appendChild(answersEl);
