@@ -19,10 +19,10 @@ export const quiz = () => {
   // } else {
   //   //warn if the start button is never clicked
   //   container.appendChild(
-  //     document.createTextNode('Please start the quiz from home page!')
+  //     document.createTextNode("Please start the quiz from home page!")
   //   );
   // }
-  container.appendChild(createRestartQuizButtonPanel());
   container.appendChild(quizQuestionPanel(state.indexOfRenderedQuestion));
+  container.appendChild(createRestartQuizButtonPanel());
   return container;
 };
