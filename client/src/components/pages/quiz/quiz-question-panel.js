@@ -5,7 +5,6 @@ import { state } from "../../../init/state.js";
 // import { createRestartQuizButtonPanel } from "./restart-button.js";
 
 const checked = (e) => {
-  debugger;
   const target = e.target;
   if (target.nodeName === "INPUT") {
     const isChecked = target.checked;
@@ -42,8 +41,6 @@ export const quizQuestionPanel = (indexQuestion) => {
     listEl.innerText = answers.text;
     listEl.insertAdjacentElement("afterbegin", checkbox);
     answersEl.appendChild(listEl);
-
-    // event listener to input checkbox
 
     checkbox.addEventListener("click", checked);
   }
