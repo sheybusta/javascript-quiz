@@ -38,6 +38,7 @@ export const quizQuestionPanel = (indexQuestion) => {
     checkbox.setAttribute("type", "checkbox");
     checkbox.dataset.index = i;
     const listEl = document.createElement("li");
+    listEl.setAttribute("class", "li-answer");
     const listDiv = document.createElement("div");
     listEl.appendChild(listDiv);
     listDiv.innerText = answers.text;
