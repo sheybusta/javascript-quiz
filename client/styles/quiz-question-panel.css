@@ -1,10 +1,17 @@
 .li-answer {
-  margin: 0.5rem;
-  background: white;
+  background: rgb(236, 233, 213);
   color: black;
-  font-size: 1.5rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-content: center;
   transition: all 0.5s ease;
+}
+
+.li-answer div {
+  flex: 1;
+}
+
+.what {
+  min-width: 30%;
+  list-style: none;
 }
