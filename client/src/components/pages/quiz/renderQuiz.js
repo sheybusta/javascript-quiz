@@ -17,8 +17,13 @@ export const quizQuestionPanel = (indexOfRenderedQuestion) => {
     checkbox.setAttribute("type", "checkbox");
     const listEl = document.createElement("li");
     listEl.innerText = answers.text;
-    listEl.insertAdjacentElement("afterbegin", checkbox);
     answersEl.appendChild(listEl);
+    listEl.appendChild(checkbox);
+    listEl.insertAdjacentElement("afterbegin", checkbox);
+    // reads if selected
+
+    // if selected need to push that to data
+    // compare with correct === true
   }
   quizContainer.appendChild(questionEl);
   quizContainer.appendChild(answersEl);
