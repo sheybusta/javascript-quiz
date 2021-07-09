@@ -37,7 +37,7 @@
  * @property {array of questions} questions -
  */
 export const data = {
-  indexOfRenderedQuestion: -1,
+  indexOfRenderedQuestion: 0,
   numberOfTotalQuestions: -1,
   currentScore: -1,
 
