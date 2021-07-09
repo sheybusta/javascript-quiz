@@ -18,9 +18,10 @@ const checked = (e) => {
         e.target.dataset.index
       ].selected = false;
     }
-    console.log(isChecked);
-    console.log(target);
-    console.log(e.target.dataset.index);
+    // console.log(isChecked);
+    // console.log(target);
+    // eslint-disable-next-line spellcheck/spell-checker
+    // console.log(e.target.dataset.index);
   }
 };
 
