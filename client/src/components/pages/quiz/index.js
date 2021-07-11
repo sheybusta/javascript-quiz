@@ -1,6 +1,7 @@
-import { state } from "../../../init/state.js";
-import { quizQuestionPanel } from "./quiz-question-panel.js";
-import { createRestartQuizButtonPanel } from "./restart-button.js";
+import { state } from '../../../init/state.js';
+import { createHintPanel } from './hint-panel.js';
+import { quizQuestionPanel } from './quiz-question-panel.js';
+import { createRestartQuizButtonPanel } from './restart-button.js';
 
 /**
  * The quiz page. Loads when the quiz page is requested.
@@ -8,21 +9,20 @@ import { createRestartQuizButtonPanel } from "./restart-button.js";
  * @returns {HTMLDivElement} A rendered quiz page.
  */
 export const quiz = () => {
-  const container = document.createElement("div");
-  container.className = "body";
+  const container = document.createElement('div');
+  container.className = 'body';
 
-  // if (state.indexOfRenderedQuestion >= 0) {
-  //   //Main display panel for the questions
-  //   const mainQuestionPanel = quizQuestionPanel();
+  if (state.indexOfRenderedQuestion >= 0) {
+    container.appendChild(quizQuestionPanel(state.indexOfRenderedQuestion));
 
-  //   container.appendChild(mainQuestionPanel);
-  // } else {
-  //   //warn if the start button is never clicked
-  //   container.appendChild(
-  //     document.createTextNode("Please start the quiz from home page!")
-  //   );
-  // }
-  container.appendChild(quizQuestionPanel(state.indexOfRenderedQuestion));
-  container.appendChild(createRestartQuizButtonPanel());
+    container.appendChild(createHintPanel());
+    container.appendChild(createRestartQuizButtonPanel());
+  } else {
+    //warn if the start button is never clicked
+    container.appendChild(
+      document.createTextNode('Please start the quiz from home page!')
+    );
+  }
+
   return container;
 };
