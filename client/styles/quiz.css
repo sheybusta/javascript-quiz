@@ -14,3 +14,15 @@
 #previous-button {
   visibility: hidden;
 }
+
+#restart-button-panel {
+  /* border: 1px solid yellowgreen; */
+  display: flex;
+  justify-content: flex-end;
+}
+
+#hint-panel {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: flex-start;
+}

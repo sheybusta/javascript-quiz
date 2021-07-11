@@ -1,4 +1,5 @@
 import { state } from '../../../init/state.js';
+import { divElement } from '../../shared/div.js';
 import { createHintPanel } from './hint-panel.js';
 import { quizQuestionPanel } from './quiz-question-panel.js';
 import { createRestartQuizButtonPanel } from './restart-button.js';
