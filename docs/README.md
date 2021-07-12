@@ -28,6 +28,8 @@
     - questions
       - [index.js](#clientsrccomponentspagesquestionsindexjs)
     - quiz
+      - [hint-div.js](#clientsrccomponentspagesquizhint-divjs)
+      - [hint-panel.js](#clientsrccomponentspagesquizhint-paneljs)
       - [index.js](#clientsrccomponentspagesquizindexjs)
       - [quiz-buttons.js](#clientsrccomponentspagesquizquiz-buttonsjs)
       - [quiz-question-panel.js](#clientsrccomponentspagesquizquiz-question-paneljs)
@@ -166,6 +168,14 @@ The questions page.
 ---
 
 ### /quiz
+
+<details><summary><a href="../../client/src/components/pages/quiz/hint-div.js" id="clientsrccomponentspagesquizhint-divjs">../client/src/components/pages/quiz/hint-div.js</a></summary>
+
+</details>
+
+<details><summary><a href="../../client/src/components/pages/quiz/hint-panel.js" id="clientsrccomponentspagesquizhint-paneljs">../client/src/components/pages/quiz/hint-panel.js</a></summary>
+
+</details>
 
 <details><summary><a href="../../client/src/components/pages/quiz/index.js" id="clientsrccomponentspagesquizindexjs">../client/src/components/pages/quiz/index.js</a></summary>
 
