@@ -1,7 +1,7 @@
 import { state } from "../../../init/state.js";
 import { quizQuestionPanel } from "./quiz-question-panel.js";
 import { createRestartQuizButtonPanel } from "./restart-button.js";
-import { nextBtn } from "./nextButton.js";
+import { nextButton } from "./nextButton.js";
 
 /**
  * The quiz page. Loads when the quiz page is requested.
@@ -26,6 +26,8 @@ export const quiz = () => {
   container.appendChild(quizQuestionPanel(state.indexOfRenderedQuestion));
   container.appendChild(createRestartQuizButtonPanel());
 
-  container.appendChild(nextBtn());
+  // append nextButton to the container
+  container.appendChild(nextButton());
+
   return container;
 };

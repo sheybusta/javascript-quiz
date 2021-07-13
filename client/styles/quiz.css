@@ -12,7 +12,7 @@
 }
 
 #next-button {
-  display: flex;
+  justify-content: right;  
 }
 
 #previous-button {
