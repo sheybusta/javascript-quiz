@@ -1,10 +1,6 @@
 import { data } from "../../../../data/quiz.js";
 
-// import { divElement } from "../../shared/div.js";
-// import { createQuizButtonsDiv } from "./quiz-buttons.js";
-// import { createRestartQuizButtonPanel } from "./restart-button.js";
-
-export const quizQuestionPanel = (indexOfRenderedQuestion) => {
+const quizQuestionPanel = (indexOfRenderedQuestion) => {
   const quizContainer = document.createElement("div");
   quizContainer.className = "quiz";
   const questionEl = document.createElement("p");
@@ -24,3 +20,5 @@ export const quizQuestionPanel = (indexOfRenderedQuestion) => {
   quizContainer.appendChild(answersEl);
   return quizContainer;
 };
+
+export { quizQuestionPanel };
