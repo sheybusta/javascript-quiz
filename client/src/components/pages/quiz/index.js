@@ -25,9 +25,9 @@ export const quiz = () => {
   // }
   container.appendChild(quizQuestionPanel(state.indexOfRenderedQuestion));
   container.appendChild(createRestartQuizButtonPanel());
-  // if (state.indexOfRenderedQuestion >= 1) {
+
   // display back button
   container.appendChild(backButton());
-  // }
+
   return container;
 };

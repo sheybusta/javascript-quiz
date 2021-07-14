@@ -1,4 +1,5 @@
-import { state } from "../init/state";
+import { quizQuestionPanel } from "../components/pages/quiz/quiz-question-panel.js";
+import { state } from "../init/state.js";
 
 const backQuestionHandler = () => {
   console.log("here");
@@ -8,14 +9,7 @@ const backQuestionHandler = () => {
 
   // update the state
   state.indexOfRenderedQuestion -= 1;
-  console.log(state.indexOfRenderedQuestion);
-
-  // condition if index of current question is greater than 0
-  if (state.indexOfRenderedQuestion < 0) {
-    state.indexOfRenderedQuestion = 0;
-  }
-  console.log(state.indexOfRenderedQuestion);
-  console.log(state.numberOfTotalQuestions);
+  quiz.appendChild(quizQuestionPanel(state.indexOfRenderedQuestion));
+  // console.log(state.indexOfRenderedQuestion);
 };
-
 export { backQuestionHandler };
