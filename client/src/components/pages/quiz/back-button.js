@@ -1,4 +1,4 @@
-import { backQuestionHandler } from "../../../handlers/backQuestionHandler.js";
+import { backQuestionHandler } from "../../../handlers/back-question-handler.js";
 
 const backButton = () => {
   const button = document.createElement("button");

@@ -10,11 +10,9 @@ const backQuestionHandler = () => {
   state.indexOfRenderedQuestion -= 1;
   console.log(state.indexOfRenderedQuestion);
 
-  // get length of questions or total questions
-  const totalQuestions = state.numberOfTotalQuestions;
-  // condition if index of question is less than total questions
-  if (state.indexOfRenderedQuestion >= totalQuestions) {
-    state.indexOfRenderedQuestion = state.numberOfTotalQuestions + 1;
+  // condition if index of current question is greater than 0
+  if (state.indexOfRenderedQuestion < 0) {
+    state.indexOfRenderedQuestion = 0;
   }
   console.log(state.indexOfRenderedQuestion);
   console.log(state.numberOfTotalQuestions);
