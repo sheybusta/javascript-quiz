@@ -1,5 +1,5 @@
 import { data } from "../../../../data/quiz.js";
-import { quizQuestionPanel } from "./renderQuiz.js";
+import { quizQuestionPanel } from "./quiz-question-panel.js";
 
 /**
  * The quiz page.
