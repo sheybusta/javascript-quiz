@@ -1,4 +1,4 @@
-import { data } from "../../../../data/quiz.js";
+import { state } from "../../../init/state.js";
 import { quizQuestionPanel } from "./quiz-question-panel.js";
 
 /**
@@ -9,7 +9,6 @@ import { quizQuestionPanel } from "./quiz-question-panel.js";
 export const quiz = () => {
   const container = document.createElement("div");
   container.className = "body";
-  const x = data.indexOfRenderedQuestion;
-  container.appendChild(quizQuestionPanel(x));
+  container.appendChild(quizQuestionPanel(state.indexOfRenderedQuestion));
   return container;
 };
