@@ -2,7 +2,7 @@ import { quizQuestionPanel } from "../components/pages/quiz/quiz-question-panel.
 import { state } from "../init/state.js";
 
 const backQuestionHandler = () => {
-  console.log("here");
+  // console.log("here");
   // clean quiz
   const quiz = document.getElementsByClassName("quiz");
   quiz.innerHTML = "";
