@@ -32,7 +32,6 @@
       - [hint-div.js](#clientsrccomponentspagesquizhint-divjs)
       - [hint-panel.js](#clientsrccomponentspagesquizhint-paneljs)
       - [index.js](#clientsrccomponentspagesquizindexjs)
-      - [next-button.js](#clientsrccomponentspagesquiznext-buttonjs)
       - [nextButton.js](#clientsrccomponentspagesquiznextButtonjs)
       - [quiz-buttons.js](#clientsrccomponentspagesquizquiz-buttonsjs)
       - [quiz-question-panel.js](#clientsrccomponentspagesquizquiz-question-paneljs)
@@ -195,10 +194,6 @@ The questions page.
 The quiz page. Loads when the quiz page is requested.
 
 **Returns**: <code>HTMLDivElement</code> - A rendered quiz page.
-
-</details>
-
-<details><summary><a href="../../client/src/components/pages/quiz/next-button.js" id="clientsrccomponentspagesquiznext-buttonjs">../client/src/components/pages/quiz/next-button.js</a></summary>
 
 </details>
 
