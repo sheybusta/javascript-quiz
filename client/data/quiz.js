@@ -3,7 +3,6 @@ export const data = {
   numberOfTotalQuestions: -1,
   currentScore: -1,
 
-  greeting: "hello",
   questions: [
     {
       question:
