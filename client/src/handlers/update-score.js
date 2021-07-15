@@ -25,8 +25,8 @@ export const updateScore = () => {
   console.log(scoreState);
 
   // access array of answers of current question in data
-  const currentQuestionAnswers =
-    state.questions[state.indexOfRenderedQuestion].answers; // array
+  const currentQuestion = state.questions[state.indexOfRenderedQuestion];
+  const currentQuestionAnswers = currentQuestion.answers; // array
   console.log(currentQuestionAnswers);
 
   const questionLength = currentQuestionAnswers.length; // amount of answer options in question
@@ -44,7 +44,8 @@ export const updateScore = () => {
   // check if all "correct"  and no "wrong" options were chosen.
   // if everything is correct, user gets 1 score.
   if (checkedCorrect === questionLength) {
-    scoreState += 1;
+    currentQuestion.answered = true;
+    //scoreState += 1;
     console.log(scoreState);
   }
   renderScore(scoreState);

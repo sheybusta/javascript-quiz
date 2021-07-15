@@ -34,3 +34,11 @@ export const quiz = () => {
   }
   return container;
 };
+
+// state.state.currentScore = "";
+
+for (const item of state.questions) {
+  for (const key in item) {
+    console.log(`${key}: ${item[key]}`);
+  }
+}

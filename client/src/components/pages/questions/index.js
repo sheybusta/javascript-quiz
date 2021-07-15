@@ -1,4 +1,4 @@
-import { inputGreeting } from "../../shared/input-greeting.js";
+// import { inputGreeting } from "../../shared/input-greeting.js";
 
 /**
  * The questions page.
