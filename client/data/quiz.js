@@ -1,5 +1,5 @@
 export const data = {
-  indexOfRenderedQuestion: 0,
+  indexOfRenderedQuestion: -1,
   numberOfTotalQuestions: -1,
   currentScore: -1,
 
