@@ -11,6 +11,20 @@
   display: none;
 }
 
+#next-button {
+  justify-content: right;  
+}
+
 #previous-button {
   visibility: hidden;
+}
+
+#restart-button-panel {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#hint-panel {
+  display: flex;
+  justify-content: flex-start;
 }

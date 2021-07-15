@@ -2,14 +2,9 @@ import { quizQuestionPanel } from "../components/pages/quiz/quiz-question-panel.
 import { state } from "../init/state.js";
 
 const backQuestionHandler = () => {
-  // console.log("here");
-  // clean quiz
-  const quiz = document.getElementsByClassName("quiz");
+  const quiz = document.querySelector(".quiz");
   quiz.innerHTML = "";
-
-  // update the state
   state.indexOfRenderedQuestion -= 1;
   quiz.appendChild(quizQuestionPanel(state.indexOfRenderedQuestion));
-  // console.log(state.indexOfRenderedQuestion);
 };
 export { backQuestionHandler };

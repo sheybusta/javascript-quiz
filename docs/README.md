@@ -28,7 +28,10 @@
     - questions
       - [index.js](#clientsrccomponentspagesquestionsindexjs)
     - quiz
+      - [hint-div.js](#clientsrccomponentspagesquizhint-divjs)
+      - [hint-panel.js](#clientsrccomponentspagesquizhint-paneljs)
       - [index.js](#clientsrccomponentspagesquizindexjs)
+      - [nextButton.js](#clientsrccomponentspagesquiznextButtonjs)
       - [quiz-buttons.js](#clientsrccomponentspagesquizquiz-buttonsjs)
       - [quiz-question-panel.js](#clientsrccomponentspagesquizquiz-question-paneljs)
       - [restart-button.js](#clientsrccomponentspagesquizrestart-buttonjs)
@@ -38,6 +41,7 @@
     - [input-greeting.js](#clientsrccomponentssharedinput-greetingjs)
 - handlers
   - [change-greeting.js](#clientsrchandlerschange-greetingjs)
+  - [nextButtonHandler.js](#clientsrchandlersnextButtonHandlerjs)
 - init
   - [index.js](#clientsrcinitindexjs)
   - [router.js](#clientsrcinitrouterjs)
@@ -167,6 +171,14 @@ The questions page.
 
 ### /quiz
 
+<details><summary><a href="../../client/src/components/pages/quiz/hint-div.js" id="clientsrccomponentspagesquizhint-divjs">../client/src/components/pages/quiz/hint-div.js</a></summary>
+
+</details>
+
+<details><summary><a href="../../client/src/components/pages/quiz/hint-panel.js" id="clientsrccomponentspagesquizhint-paneljs">../client/src/components/pages/quiz/hint-panel.js</a></summary>
+
+</details>
+
 <details><summary><a href="../../client/src/components/pages/quiz/index.js" id="clientsrccomponentspagesquizindexjs">../client/src/components/pages/quiz/index.js</a></summary>
 
 <a name="quiz"></a>
@@ -176,6 +188,10 @@ The questions page.
 The quiz page. Loads when the quiz page is requested.
 
 **Returns**: <code>HTMLDivElement</code> - A rendered quiz page.
+
+</details>
+
+<details><summary><a href="../../client/src/components/pages/quiz/nextButton.js" id="clientsrccomponentspagesquiznextButtonjs">../client/src/components/pages/quiz/nextButton.js</a></summary>
 
 </details>
 
@@ -237,6 +253,10 @@ This component creates a div element and returns it.
 # /handlers
 
 <details><summary><a href="../../client/src/handlers/change-greeting.js" id="clientsrchandlerschange-greetingjs">../client/src/handlers/change-greeting.js</a></summary>
+
+</details>
+
+<details><summary><a href="../../client/src/handlers/nextButtonHandler.js" id="clientsrchandlersnextButtonHandlerjs">../client/src/handlers/nextButtonHandler.js</a></summary>
 
 </details>
 
