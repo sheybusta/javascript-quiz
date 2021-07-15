@@ -1,4 +1,3 @@
-
 const instructions = () => {
   const divInst = document.createElement("div");
   divInst.classList = "quiz-instructions";
