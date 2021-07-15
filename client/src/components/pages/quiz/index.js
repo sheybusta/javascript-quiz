@@ -5,6 +5,7 @@ import { quizQuestionPanel } from "./quiz-question-panel.js";
 import { createRestartQuizButtonPanel } from "./restart-button.js";
 import { nextButton } from "./nextButton.js";
 import { score } from "./score.js";
+import { countCurrentScore } from "../../../logic/count-current-score.js";
 
 /**
  * The quiz page. Loads when the quiz page is requested.
@@ -35,10 +36,4 @@ export const quiz = () => {
   return container;
 };
 
-// state.state.currentScore = "";
-
-for (const item of state.questions) {
-  for (const key in item) {
-    console.log(`${key}: ${item[key]}`);
-  }
-}
+state.currentScore = countCurrentScore();
