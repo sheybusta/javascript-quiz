@@ -11,6 +11,10 @@
   display: none;
 }
 
+#next-button {
+  justify-content: right;  
+}
+
 #previous-button {
   visibility: hidden;
 }
