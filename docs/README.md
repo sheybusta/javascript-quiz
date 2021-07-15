@@ -32,6 +32,7 @@
       - [hint-div.js](#clientsrccomponentspagesquizhint-divjs)
       - [hint-panel.js](#clientsrccomponentspagesquizhint-paneljs)
       - [index.js](#clientsrccomponentspagesquizindexjs)
+      - [next-button.js](#clientsrccomponentspagesquiznext-buttonjs)
       - [nextButton.js](#clientsrccomponentspagesquiznextButtonjs)
       - [quiz-buttons.js](#clientsrccomponentspagesquizquiz-buttonsjs)
       - [quiz-question-panel.js](#clientsrccomponentspagesquizquiz-question-paneljs)
@@ -43,6 +44,7 @@
 - handlers
   - [back-question-handler.js](#clientsrchandlersback-question-handlerjs)
   - [change-greeting.js](#clientsrchandlerschange-greetingjs)
+  - [next-question-handler.js](#clientsrchandlersnext-question-handlerjs)
   - [nextButtonHandler.js](#clientsrchandlersnextButtonHandlerjs)
 - init
   - [index.js](#clientsrcinitindexjs)
@@ -197,6 +199,10 @@ The quiz page. Loads when the quiz page is requested.
 
 </details>
 
+<details><summary><a href="../../client/src/components/pages/quiz/next-button.js" id="clientsrccomponentspagesquiznext-buttonjs">../client/src/components/pages/quiz/next-button.js</a></summary>
+
+</details>
+
 <details><summary><a href="../../client/src/components/pages/quiz/nextButton.js" id="clientsrccomponentspagesquiznextButtonjs">../client/src/components/pages/quiz/nextButton.js</a></summary>
 
 </details>
@@ -263,6 +269,10 @@ This component creates a div element and returns it.
 </details>
 
 <details><summary><a href="../../client/src/handlers/change-greeting.js" id="clientsrchandlerschange-greetingjs">../client/src/handlers/change-greeting.js</a></summary>
+
+</details>
+
+<details><summary><a href="../../client/src/handlers/next-question-handler.js" id="clientsrchandlersnext-question-handlerjs">../client/src/handlers/next-question-handler.js</a></summary>
 
 </details>
 
