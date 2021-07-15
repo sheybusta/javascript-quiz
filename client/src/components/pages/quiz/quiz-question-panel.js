@@ -30,14 +30,12 @@ export const quizQuestionPanel = (indexQuestion) => {
   quizContainer.className = "quiz";
   const questionEl = document.createElement("p");
   const currentQuestion = state.questions[indexQuestion].question;
-  console.log(currentQuestion);
   questionEl.innerText = currentQuestion;
   const answersEl = document.createElement("ul");
   answersEl.setAttribute("class", "ul-answers");
 
   for (let i = 0; i < state.questions[indexQuestion].answers.length; i++) {
     const answers = state.questions[indexQuestion].answers[i];
-    console.log(answers);
     const checkbox = document.createElement("input");
     checkbox.setAttribute("type", "checkbox");
     checkbox.dataset.index = i;
