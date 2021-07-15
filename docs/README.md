@@ -44,7 +44,6 @@
 - handlers
   - [back-question-handler.js](#clientsrchandlersback-question-handlerjs)
   - [change-greeting.js](#clientsrchandlerschange-greetingjs)
-  - [next-question-handler.js](#clientsrchandlersnext-question-handlerjs)
   - [nextButtonHandler.js](#clientsrchandlersnextButtonHandlerjs)
 - init
   - [index.js](#clientsrcinitindexjs)
@@ -269,10 +268,6 @@ This component creates a div element and returns it.
 </details>
 
 <details><summary><a href="../../client/src/handlers/change-greeting.js" id="clientsrchandlerschange-greetingjs">../client/src/handlers/change-greeting.js</a></summary>
-
-</details>
-
-<details><summary><a href="../../client/src/handlers/next-question-handler.js" id="clientsrchandlersnext-question-handlerjs">../client/src/handlers/next-question-handler.js</a></summary>
 
 </details>
 
