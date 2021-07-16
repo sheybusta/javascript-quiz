@@ -9,6 +9,6 @@ export const questions = () => {
   const container = document.createElement("div");
   container.className = "body";
 
-  container.appendChild(inputGreeting());
+  // container.appendChild(inputGreeting());
   return container;
 };
