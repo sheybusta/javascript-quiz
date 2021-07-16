@@ -222,6 +222,18 @@ This function creates a start/restart button for the quiz page and resets the qu
 
 <details><summary><a href="../../client/src/components/pages/quiz/score.js" id="clientsrccomponentspagesquizscorejs">../client/src/components/pages/quiz/score.js</a></summary>
 
+<a name="score"></a>
+
+## score ⇒ <code>HTMLDivElement</code>
+
+Returns a div element.
+
+**Returns**: <code>HTMLDivElement</code> - - Div with rendered score.
+
+| Param        | Type                | Description              |
+| ------------ | ------------------- | ------------------------ |
+| updatedScore | <code>number</code> | Updated score from data. |
+
 </details>
 
 ---
