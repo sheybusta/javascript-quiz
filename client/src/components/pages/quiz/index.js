@@ -4,6 +4,7 @@ import { createHintPanel } from "./hint-panel.js";
 import { quizQuestionPanel } from "./quiz-question-panel.js";
 import { createRestartQuizButtonPanel } from "./restart-button.js";
 import { nextButton } from "./nextButton.js";
+import { submitButton } from "./submit-button.js";
 import { score } from "./score.js";
 
 /**
@@ -24,6 +25,7 @@ export const quiz = () => {
     container.appendChild(quizQuestionPanel(state.indexOfRenderedQuestion));
     container.appendChild(backButton());
     container.appendChild(nextButton());
+    container.appendChild(submitButton());
     container.appendChild(createHintPanel());
     container.appendChild(createRestartQuizButtonPanel());
   } else {

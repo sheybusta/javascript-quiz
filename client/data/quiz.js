@@ -77,5 +77,41 @@ export const data = {
         },
       ],
     },
+    {
+      question: "question 3",
+      answered: false,
+      answers: [
+        {
+          text: "1",
+          correct: true,
+          selected: false,
+        },
+        {
+          text: "2",
+          correct: false,
+          selected: false,
+        },
+        {
+          text: "3",
+          correct: true,
+          selected: false,
+        },
+        {
+          text: "4",
+          correct: true,
+          selected: false,
+        },
+      ],
+      links: [
+        {
+          text: "javascript.info",
+          url: "https://javascript.info/variables",
+        },
+        {
+          text: "Tyler McGinnis",
+          url: "https://ui.dev/var-let-const/",
+        },
+      ],
+    },
   ],
 };
