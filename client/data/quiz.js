@@ -78,27 +78,27 @@ export const data = {
       ],
     },
     {
-      question: "question 3",
+      question: "Inside which HTML element do we put the JavaScript?",
       answered: false,
       answers: [
         {
-          text: "1",
-          correct: true,
-          selected: false,
-        },
-        {
-          text: "2",
+          text: "<scripting>",
           correct: false,
           selected: false,
         },
         {
-          text: "3",
+          text: "<script>",
           correct: true,
           selected: false,
         },
         {
-          text: "4",
-          correct: true,
+          text: "<js>",
+          correct: false,
+          selected: false,
+        },
+        {
+          text: "<javascript>",
+          correct: false,
           selected: false,
         },
       ],
