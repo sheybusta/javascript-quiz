@@ -29,6 +29,7 @@
       - [index.js](#clientsrccomponentspagesquestionsindexjs)
     - quiz
       - [back-button.js](#clientsrccomponentspagesquizback-buttonjs)
+      - [div-results.js](#clientsrccomponentspagesquizdiv-resultsjs)
       - [hint-div.js](#clientsrccomponentspagesquizhint-divjs)
       - [hint-panel.js](#clientsrccomponentspagesquizhint-paneljs)
       - [index.js](#clientsrccomponentspagesquizindexjs)
@@ -43,6 +44,7 @@
 - handlers
   - [back-question-handler.js](#clientsrchandlersback-question-handlerjs)
   - [nextButtonHandler.js](#clientsrchandlersnextButtonHandlerjs)
+  - [submit-button-handler.js](#clientsrchandlerssubmit-button-handlerjs)
   - [update-score.js](#clientsrchandlersupdate-scorejs)
 - init
   - [index.js](#clientsrcinitindexjs)
@@ -176,6 +178,10 @@ The questions page.
 
 </details>
 
+<details><summary><a href="../../client/src/components/pages/quiz/div-results.js" id="clientsrccomponentspagesquizdiv-resultsjs">../client/src/components/pages/quiz/div-results.js</a></summary>
+
+</details>
+
 <details><summary><a href="../../client/src/components/pages/quiz/hint-div.js" id="clientsrccomponentspagesquizhint-divjs">../client/src/components/pages/quiz/hint-div.js</a></summary>
 
 </details>
@@ -274,6 +280,10 @@ This component creates a div element and returns it.
 </details>
 
 <details><summary><a href="../../client/src/handlers/nextButtonHandler.js" id="clientsrchandlersnextButtonHandlerjs">../client/src/handlers/nextButtonHandler.js</a></summary>
+
+</details>
+
+<details><summary><a href="../../client/src/handlers/submit-button-handler.js" id="clientsrchandlerssubmit-button-handlerjs">../client/src/handlers/submit-button-handler.js</a></summary>
 
 </details>
 
