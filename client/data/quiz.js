@@ -104,12 +104,8 @@ export const data = {
       ],
       links: [
         {
-          text: "javascript.info",
-          url: "https://javascript.info/variables",
-        },
-        {
-          text: "Tyler McGinnis",
-          url: "https://ui.dev/var-let-const/",
+          text: "tutorialsteacher.com",
+          url: "https://www.tutorialsteacher.com/javascript/script-tag",
         },
       ],
     },
