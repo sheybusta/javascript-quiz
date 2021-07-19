@@ -38,6 +38,7 @@
       - [quiz-question-panel.js](#clientsrccomponentspagesquizquiz-question-paneljs)
       - [restart-button.js](#clientsrccomponentspagesquizrestart-buttonjs)
       - [score.js](#clientsrccomponentspagesquizscorejs)
+      - [submit-button.js](#clientsrccomponentspagesquizsubmit-buttonjs)
   - shared
     - [button.js](#clientsrccomponentssharedbuttonjs)
     - [div.js](#clientsrccomponentsshareddivjs)
@@ -239,6 +240,16 @@ Returns a div element.
 | Param        | Type                | Description              |
 | ------------ | ------------------- | ------------------------ |
 | updatedScore | <code>number</code> | Updated score from data. |
+
+</details>
+
+<details><summary><a href="../../client/src/components/pages/quiz/submit-button.js" id="clientsrccomponentspagesquizsubmit-buttonjs">../client/src/components/pages/quiz/submit-button.js</a></summary>
+
+<a name="submitButton"></a>
+
+## submitButton ⇒ <code>HTMLButtonElement</code>
+
+Renders button element.
 
 </details>
 
