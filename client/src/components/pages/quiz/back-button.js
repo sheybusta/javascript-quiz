@@ -5,7 +5,7 @@ const backButton = () => {
   const button = document.createElement("button");
   button.className = "btn btn-primary mr-4";
   button.innerText = "back";
-  button.addEventListener("click", ()=>{
+  button.addEventListener("click", () => {
     updateScore();
     backQuestionHandler();
   });

@@ -7,7 +7,7 @@ const nextButton = () => {
   nextBtn.classList = "btn btn-primary";
   nextBtn.innerText = "Next";
   document.body.appendChild(nextBtn);
-  nextBtn.addEventListener("click", ()=>{
+  nextBtn.addEventListener("click", () => {
     updateScore();
     nextButtonHandler();
   });

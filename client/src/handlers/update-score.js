@@ -19,55 +19,33 @@ const renderScore = (scoreState) => {
   scoreDiv.appendChild(newDivScore);
 };
 
-// updates data
-export const updateScore = () => {
-
-  
-  calculateScore();
-
-  renderScore(state.currentScore);
-};
-
-const calculateScore = () =>{
-
-  
+const calculateScore = () => {
   state.currentScore = 0;
 
-
-  
   for (let index = 0; index < state.questions.length; index++) {
     const question = state.questions[index];
     let isAnsweredCorrectly = false;
 
-
-    
     for (let index2 = 0; index2 < question.answers.length; index2++) {
-     
       const answer = question.answers[index2];
 
- 
-      
-    if (answer.correct === answer.selected) {
-      isAnsweredCorrectly = true;
-    } else {
-      isAnsweredCorrectly = false;
-      break;
-    } 
-    console.log(isAnsweredCorrectly); 
-  }  
- 
+      if (answer.correct === answer.selected) {
+        isAnsweredCorrectly = true;
+      } else {
+        isAnsweredCorrectly = false;
+        break;
+      }
+    }
 
-  
-   if (isAnsweredCorrectly) {
- 
-    
-     state.currentScore++;
-   }
-   
+    if (isAnsweredCorrectly) {
+      state.currentScore++;
+    }
   }
+};
 
- 
+// updates data
+export const updateScore = () => {
+  calculateScore();
 
-
-
-}
+  renderScore(state.currentScore);
+};

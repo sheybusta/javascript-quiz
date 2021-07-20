@@ -40,7 +40,7 @@ export const quizQuestionPanel = (indexQuestion) => {
     checkbox.setAttribute("type", "checkbox");
     checkbox.dataset.index = i;
     if (answers.selected) {
-      checkbox.setAttribute("checked",'true')
+      checkbox.setAttribute("checked", "true");
     }
     const listEl = document.createElement("li");
     listEl.setAttribute("class", "li-answer");
