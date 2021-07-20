@@ -21,24 +21,46 @@ const renderScore = (scoreState) => {
 
 // updates data
 export const updateScore = () => {
-  // access array of answers of current question in data
-  const currentQuestion = state.questions[state.indexOfRenderedQuestion];
-  const currentQuestionAnswers = currentQuestion.answers; // array
 
-  const questionLength = currentQuestionAnswers.length; // amount of answer options in question
-  // check each answer of current question if correct = selected
-  let checkedCorrect = 0;
-
-  for (const answer of currentQuestionAnswers) {
-    if (answer.correct === answer.selected) {
-      checkedCorrect++;
-    }
-  }
-  // check if all "correct"  and no "wrong" options were chosen.
-  // if everything is correct, user gets 1 score.
-  if (checkedCorrect === questionLength) {
-    state.currentScore += 1;
-  }
+// debugger;
+  calculateScore();
 
   renderScore(state.currentScore);
 };
+
+const calculateScore = () =>{
+  // reset the score to 0
+  state.currentScore = 0;
+
+  // go over all the questions 
+  for (let index = 0; index < state.questions.length; index++) {
+    const question = state.questions[index];
+    let isAnsweredCorrectly = false;
+
+     //for each question go over the answers 
+    for (let index2 = 0; index2 < question.answers.length; index2++) {
+     
+      const answer = question.answers[index2];
+    // check if the answer is correctly answered
+    if (answer.correct === answer.selected) {
+      isAnsweredCorrectly = true;
+    } else {
+      isAnsweredCorrectly = false;
+      break;
+    } 
+    console.log(isAnsweredCorrectly); 
+  }  
+ 
+   // check if the answer is correctly answered
+   if (isAnsweredCorrectly) {
+     // add score +1
+     state.currentScore++;
+   }
+   
+  }
+
+ 
+
+
+
+}
