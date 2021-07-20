@@ -22,26 +22,31 @@ const renderScore = (scoreState) => {
 // updates data
 export const updateScore = () => {
 
-// debugger;
+  
   calculateScore();
 
   renderScore(state.currentScore);
 };
 
 const calculateScore = () =>{
-  // reset the score to 0
+
+  
   state.currentScore = 0;
 
-  // go over all the questions 
+
+  
   for (let index = 0; index < state.questions.length; index++) {
     const question = state.questions[index];
     let isAnsweredCorrectly = false;
 
-     //for each question go over the answers 
+
+    
     for (let index2 = 0; index2 < question.answers.length; index2++) {
      
       const answer = question.answers[index2];
-    // check if the answer is correctly answered
+
+ 
+      
     if (answer.correct === answer.selected) {
       isAnsweredCorrectly = true;
     } else {
@@ -51,9 +56,11 @@ const calculateScore = () =>{
     console.log(isAnsweredCorrectly); 
   }  
  
-   // check if the answer is correctly answered
+
+  
    if (isAnsweredCorrectly) {
-     // add score +1
+ 
+    
      state.currentScore++;
    }
    
